@@ -52,7 +52,20 @@ namespace Tarea2
                         break;
                 }
                 Console.WriteLine("\n");
+                bool bucle = false;
 
+                while (!bucle)
+                {
+                    Console.WriteLine("------------------------------------------------------------------------------------");
+                    Console.WriteLine("¿Qué quieres hacer? \n")
+                    Console.WriteLine("1. Comprar otra arma");
+                    Console.WriteLine("2. Ver inventario");
+                    Console.WriteLine("3. Eliminar arma");
+                    Console.WriteLine("4. Salir \n");
+
+
+                    }
+                }
             }
 
         }

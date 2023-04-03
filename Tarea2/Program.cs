@@ -24,6 +24,37 @@ namespace Tarea2
 
             List<Arma> armasCompradas = new List<Arma>();
 
+            while (!salir)
+            {
+                Console.WriteLine("Tienda:");
+                for (int i = 0; i < armas.Count; i++)
+                {
+                    Console.WriteLine(i + 1 + ". " + armas[i].ObtenerData());
+                }
+                Console.WriteLine("\n");
+                Console.WriteLine("Ingrese el número de arma a comprar");
+                string selection = Console.ReadLine();
+                Console.WriteLine("\n");
+
+                switch (selection)
+                {
+                    case "1":
+                        armasCompradas.Add(armas[0]);
+                        Console.WriteLine(armas[0].ObtenerNombre() + " agregado al inventario");
+                        break;
+                    case "2":
+                        armasCompradas.Add(armas[1]);
+                        Console.WriteLine(armas[1].ObtenerNombre() + " agregado al inventario");
+                        break;
+                    case "3":
+                        armasCompradas.Add(armas[2]);
+                        Console.WriteLine(armas[2].ObtenerNombre() + " agregado al inventario");
+                        break;
+                }
+                Console.WriteLine("\n");
+
+            }
+
         }
     }
 }

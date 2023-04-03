@@ -63,7 +63,41 @@ namespace Tarea2
                     Console.WriteLine("3. Eliminar arma");
                     Console.WriteLine("4. Salir \n");
 
+                    string acción = Console.ReadLine();
 
+                    switch (acción)
+                    {
+                        case "1":
+                            bucle = true;
+                            Console.WriteLine("\n");
+                            break;
+                        case "2":
+                            Console.WriteLine("Inventario:");
+                            for (int i = 0, i < armasCompradas.Count; i++)
+                            {
+                                Console.WriteLine((i+1) + "." + armasCompradas[i].ObternerData())
+                            }
+                            Console.WriteLine("\n");
+                            break;
+                        case "3":
+                            Console.WriteLine("Inventario:");
+                            for (int i = 0, i < armasCompradas.Count; i++)
+                            {
+                                Console.WriteLine((i + 1) + "." + armasCompradas[i].ObternerData())
+                            }
+                            Console.WriteLine("\n");
+                            Console.WriteLine("numero de arma a eliminar: ");
+                            int eliminar = Int32.Parse(Console.ReadLine());
+                            Console.WriteLine(armasCompradas[eliminar - 1].ObtenerNombre() + " eliminado");
+                            armasCompradas.RemoveAt(eliminar - 1);
+                            Console.WriteLine("\n");
+                            break;
+                        case "4":
+                            bucle = true;
+                            salir = true;
+                            break;
+                        default:
+                            break;
                     }
                 }
             }

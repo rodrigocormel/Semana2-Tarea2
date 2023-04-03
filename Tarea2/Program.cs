@@ -10,6 +10,9 @@ namespace Tarea2
     {
         static void Main(string[] args)
         {
+
+
+
         }
     }
 }

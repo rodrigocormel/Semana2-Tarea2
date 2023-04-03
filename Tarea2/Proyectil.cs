@@ -22,7 +22,7 @@ namespace Tarea2
             return nombre;
         }
 
-        public float Daño()
+        public float ObtenerDaño()
         {
             return daño;
         }

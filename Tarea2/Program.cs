@@ -57,7 +57,7 @@ namespace Tarea2
                 while (!bucle)
                 {
                     Console.WriteLine("------------------------------------------------------------------------------------");
-                    Console.WriteLine("¿Qué quieres hacer? \n")
+                    Console.WriteLine("¿Qué quieres hacer? \n");
                     Console.WriteLine("1. Comprar otra arma");
                     Console.WriteLine("2. Ver inventario");
                     Console.WriteLine("3. Eliminar arma");
@@ -73,17 +73,17 @@ namespace Tarea2
                             break;
                         case "2":
                             Console.WriteLine("Inventario:");
-                            for (int i = 0, i < armasCompradas.Count; i++)
+                            for (int i = 0; i < armasCompradas.Count; i++)
                             {
-                                Console.WriteLine((i+1) + "." + armasCompradas[i].ObternerData())
+                                Console.WriteLine((i + 1) + "." + armasCompradas[i].ObtenerData());
                             }
                             Console.WriteLine("\n");
                             break;
                         case "3":
                             Console.WriteLine("Inventario:");
-                            for (int i = 0, i < armasCompradas.Count; i++)
+                            for (int i = 0; i < armasCompradas.Count; i++)
                             {
-                                Console.WriteLine((i + 1) + "." + armasCompradas[i].ObternerData())
+                                Console.WriteLine((i + 1) + "." + armasCompradas[i].ObtenerData());
                             }
                             Console.WriteLine("\n");
                             Console.WriteLine("numero de arma a eliminar: ");

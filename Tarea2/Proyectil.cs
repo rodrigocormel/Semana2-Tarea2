@@ -11,7 +11,7 @@ namespace Tarea2
         public float daño;
         public string nombre;
 
-        public Proyectil(float daño , string nombre) 
+        public Proyectil(string nombre, float daño) 
         {
             this.nombre = nombre;
             this.daño = daño;
